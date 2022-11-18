@@ -21,3 +21,9 @@
     list-style: none;
     padding: 10px;
 }
+
+.form__li--done {
+    list-style: none;
+    padding: 10px;
+    text-decoration: line-through;
+}

@@ -16,7 +16,7 @@
 
         for (const task of tasks) {
             htmlString += `
-        <li class=\"form__li\">
+        <li${task.done ? " class=\"form__li--done\"" :" class=\"form__li\""}>
             ${task.content}
         </li>
         `;
