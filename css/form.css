@@ -1,0 +1,23 @@
+.form {
+    width: 100%;
+}
+
+.form__input {
+    width: 82%;
+    padding: 10px;
+    border: 2px solid rgb(245, 234, 234);
+    word-break: break-word;
+}
+
+.form__button {
+    padding: 12px;
+    border: none;
+    background-color: teal;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+.form__li {
+    list-style: none;
+    padding: 10px;
+}
