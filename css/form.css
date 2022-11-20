@@ -11,11 +11,9 @@
 }
 
 .js-form__input {
-    width: 82%;
     padding: 10px;
     border: 2px solid rgb(245, 234, 234);
     word-break: break-word;
-
 }
 
 .form__button {
@@ -33,7 +31,6 @@
 
 .js-tasks {
     width: 100%;
-
 }
 
 .form__li {
@@ -49,21 +46,20 @@
 
 .form__li--done {
     text-decoration: line-through;
-
+    margin: 0;
 }
 
 .js-form__done {
+    width: 30px;
+    height: 30px;
+    color: white;
     border: none;
-    background-color: inherit;
-    padding: 10px;
-    font-size: 1 rem;
-
+    background-color: green;
 }
 
 .js-form__remove {
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: red;
-    padding: 10px;
-    font-size: 0.5rem;
-
 }
