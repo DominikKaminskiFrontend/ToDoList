@@ -55,7 +55,7 @@
     margin: 0;
 }
 
-.js-form__done {
+.form__task {
     width: 30px;
     height: 30px;
     color: white;
@@ -63,29 +63,29 @@
     background-color: green;
 }
 
-.js-form__done:hover {
+.form__task:hover {
     background-color: hsl(120, 100%, 35%);
     transform: scale(1.1);
 }
 
-.js-form__done:active {
+.form__task:active {
     background-color: hsl(120, 100%, 45%);
     transform: scale(1.1);
 }
 
-.js-form__remove {
+.form__remove {
     width: 30px;
     height: 30px;
     border: none;
     background-color: hsl(0, 100%, 50%);
 }
 
-.js-form__remove:hover {
+.form__remove:hover {
     background-color: hsl(0, 100%, 55%);
     transform: scale(1.1);
 }
 
-.js-form__remove:active {
+.form__remove:active {
     background-color: hsl(0, 100%, 60%);
     transform: scale(1.1);
 }

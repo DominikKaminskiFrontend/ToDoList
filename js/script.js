@@ -25,7 +25,7 @@
     }
 
     const bindEvents = () => {
-        const removeButtons = document.querySelectorAll(".js-form__remove");
+        const removeButtons = document.querySelectorAll(".form__remove");
 
         removeButtons.forEach((removeButtons, index) => {
             removeButtons.addEventListener("click", () => {
@@ -33,7 +33,7 @@
             });
         });
 
-        const toogleDoneButtons = document.querySelectorAll(".js-form__done");
+        const toogleDoneButtons = document.querySelectorAll(".form__task");
 
         toogleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
@@ -50,9 +50,9 @@
 
             htmlString += `
              <li${task.done ? " class=\"form__li form__li--done \"" : " class=\"form__li\""}>
-            <button class=\"js-form__done\"> ${task.done ? "✔" : ""}</button>
+            <button class=\"form__task\"> ${task.done ? "✔" : ""}</button>
             ${task.content}
-            <button class="js-form__remove">🗑️</button>
+            <button class="form__remove">🗑️</button>
         </li>
         `;
         }
