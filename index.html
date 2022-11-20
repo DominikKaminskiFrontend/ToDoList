@@ -22,23 +22,19 @@
     <header>
         <h1>Lista zadań</h1>
     </header>
-    <main>
+    <main class="container">
+        <div class="container__item ">Dodaj nowe zadanie</div>
+        <div class="container__item">
+            <form class="js-form form">
+                <input class="js-form__input form__input" placeholder="Co jest do zrobienia?" autofocus>
+                <button class="form__button">Dodaj zadanie</button>
+            </form>
+        </div>
+        <div class="container__item">Lista zadań</div>
 
-        <section class="container">
-            <div class="container__item container__item--verticalLine">Dodaj nowe zadanie</div>
-            <div class="container__item">
-                <form class="js-form">
-                    <input class="js-form__input" placeholder="Co jest do zrobienia?" autofocus>
-                    <button class="form__button">Dodaj zadanie</button>
-                </form>
-            </div>
-            <div class="container__item">Lista zadań</div>
-
-            <section class="container__item">
-                <ul class="js-tasks"></ul>
-            </section>
+        <section class="container__item">
+            <ul class="js-tasks container__tasks"></ul>
         </section>
-
     </main>
 </body>
 
