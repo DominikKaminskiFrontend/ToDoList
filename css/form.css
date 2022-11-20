@@ -21,7 +21,6 @@
     border: none;
     background-color: teal;
     color: whitesmoke;
-    margin-left: 20px;
 }
 
 .form__button:hover {
@@ -30,10 +29,12 @@
 }
 
 .js-tasks {
-    width: 100%;
+    padding: 0;
 }
 
 .form__li {
+    font-weight: 400;
+    font-size: 0.8em;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
@@ -57,9 +58,18 @@
     background-color: green;
 }
 
+.js-form__done:hover{
+    background-color: hsl(120, 100%, 35%);
+    transform: scale(1.1);
+}
+
 .js-form__remove {
     width: 30px;
     height: 30px;
     border: none;
     background-color: red;
+}
+.js-form__remove:hover{
+    background-color: hsl(0, 100%, 55%);
+    transform: scale(1.1);
 }
