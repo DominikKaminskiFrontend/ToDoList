@@ -50,7 +50,7 @@
 
             htmlString += `
              <li${task.done ? " class=\"form__li form__li--done \"" : " class=\"form__li\""}>
-            <button class=\"js-form__done\"> ${task.done ? "✅" : "🟩"}</button>
+            <button class=\"js-form__done\"> ${task.done ? "✔" : ""}</button>
             ${task.content}
             <button class="js-form__remove">🗑️</button>
         </li>
