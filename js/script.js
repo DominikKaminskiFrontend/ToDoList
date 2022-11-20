@@ -10,6 +10,17 @@
         },
     ];
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push(
+            {
+                content: newTaskContent,
+            });
+    }
+
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+        render();
+    }
 
     const render = () => {
         let htmlString = "";
@@ -18,19 +29,22 @@
             htmlString += `
         <li${task.done ? " class=\"form__li--done\"" : " class=\"form__li\""}>
             ${task.content}
+            <button class="js-form__remove">🗑️</button>
         </li>
         `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+        const removeButtons = document.querySelectorAll(".js-form__remove");
+
+
+        removeButtons.forEach((removeButtons, index) => {
+            removeButtons.addEventListener("click", () => {
+                removeTask(index);
+            });
+        });
     };
 
-    const addNewTask = (newTaskContent) => {
-        tasks.push(
-            {
-                content: newTaskContent,
-            });
-    }
 
     const onFormSumbmit = (event) => {
         event.preventDefault();
