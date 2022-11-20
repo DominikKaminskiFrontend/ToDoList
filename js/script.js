@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "Zrobić HomeWork",
-            done: false,
-        },
-        {
-            content: "Rozpocząć zadanie domowe",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push(
@@ -27,6 +18,12 @@
         render();
     }
 
+    cleanInputField = () => {
+        const newTask = document.querySelector(".js-form__input");
+        newTask.value = "";
+        newTask.focus();
+    }
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-form__remove");
 
@@ -43,6 +40,7 @@
                 toogleTaskDone(index);
             });
         });
+
     }
 
     const render = () => {
@@ -51,14 +49,15 @@
         for (const task of tasks) {
 
             htmlString += `
+             <li${task.done ? " class=\"form__li form__li--done \"" : " class=\"form__li\""}>
             <button class=\"js-form__done\"> ${task.done ? "✅" : "🟩"}</button>
-            <li${task.done ? " class=\"form__li--done\"" : " class=\"form__li\""}>
             ${task.content}
             <button class="js-form__remove">🗑️</button>
         </li>
         `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
         bindEvents();
     };
 
@@ -72,6 +71,8 @@
         }
 
         addNewTask(newTaskContent);
+        cleanInputField();
+
         render();
     };
 
