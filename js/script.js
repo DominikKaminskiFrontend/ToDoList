@@ -18,12 +18,6 @@
         render();
     }
 
-    cleanInputField = () => {
-        const newTask = document.querySelector(".js-form__input");
-        newTask.value = "";
-        newTask.focus();
-    }
-
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".form__remove");
 
@@ -49,8 +43,12 @@
         for (const task of tasks) {
 
             htmlString += `
-             <li${task.done ? " class=\"form__li form__li--done \"" : " class=\"form__li\""}>
-            <button class=\"form__task\"> ${task.done ? "✔" : ""}</button>
+             <li
+             ${task.done ? " class=\"form__li form__li--done \"" : " class=\"form__li\""}
+             >
+            <button class=\"form__task\">
+             ${task.done ? "✔" : ""}
+             </button>
             ${task.content}
             <button class="form__remove">🗑️</button>
         </li>
@@ -65,13 +63,13 @@
     const onFormSumbmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-form__input").value.trim();
-        if (newTaskContent === "") {
-            return;
+        const newTaskElement = document.querySelector(".js-form__input");
+        const newTaskContent = newTaskElement.value.trim();
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = " ";
         }
-
-        addNewTask(newTaskContent);
-        cleanInputField();
+        newTaskElement.focus();
 
         render();
     };
