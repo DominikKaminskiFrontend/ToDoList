@@ -27,23 +27,8 @@
         render();
     }
 
-    const render = () => {
-        let htmlString = "";
-
-        for (const task of tasks) {
-
-            htmlString += `
-            <button class=\"js-form__done\"> ${task.done ? "✅" : "🟩"}</button>
-            <li${task.done ? " class=\"form__li--done\"" : " class=\"form__li\""}>
-            ${task.content}
-            <button class="js-form__remove">🗑️</button>
-        </li>
-        `;
-        }
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+    const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-form__remove");
-
 
         removeButtons.forEach((removeButtons, index) => {
             removeButtons.addEventListener("click", () => {
@@ -58,6 +43,23 @@
                 toogleTaskDone(index);
             });
         });
+    }
+
+    const render = () => {
+        let htmlString = "";
+
+        for (const task of tasks) {
+
+            htmlString += `
+            <button class=\"js-form__done\"> ${task.done ? "✅" : "🟩"}</button>
+            <li${task.done ? " class=\"form__li--done\"" : " class=\"form__li\""}>
+            ${task.content}
+            <button class="js-form__remove">🗑️</button>
+        </li>
+        `;
+        }
+        document.querySelector(".js-tasks").innerHTML = htmlString;
+        bindEvents();
     };
 
 
