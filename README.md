@@ -1,12 +1,15 @@
 
 - [Simple To Do List](#simple-to-do-list)
+  - [Preview](#preview)
   - [Project Idea](#project-idea)
   - [Version 1:](#version-1)
-  - [Preview](#preview)
 # Simple To Do List
   Simple To Do List for educational purposes.  
   ***
  https://dominikkaminskifrontend.github.io/ToDoList/
+
+   ## Preview     
+![](/img/ToDoListPreview.gif)
 
   Page done in **educational purposes**
   It contains basic:
@@ -43,5 +46,4 @@ If You want to remove task from list, simply hit red button on the right side wi
  - click red squere to remove task  
 - long task information are allowed   
 ***
-  ## Preview     
-![](/img/ToDoListPreview.gif)
+
