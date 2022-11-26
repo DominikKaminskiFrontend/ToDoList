@@ -13,7 +13,6 @@
 .form__input {
     padding: 10px;
     border: 2px solid rgb(245, 234, 234);
-    word-break: break-word;
 }
 
 .form__button {
@@ -21,16 +20,15 @@
     border: none;
     background-color: hsl(180, 100%, 25%);
     color: whitesmoke;
+    font-size: 15px;
 }
 
 .form__button:hover {
     background-color: hsl(180, 97%, 35%);
-    transform: scale(1.1);
 }
 
 .form__button:active {
     background-color: hsl(180, 97%, 40%);
-    transform: scale(1.1);
 }
 
 .form__li {
@@ -41,12 +39,12 @@
     grid-gap: 10px;
     align-items: center;
     list-style: none;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     border-bottom: 5px solid whitesmoke;
 }
 
-.form__li--done {
+.form__task--done {
     text-decoration: line-through;
     margin: 0;
 }
@@ -61,12 +59,10 @@
 
 .form__task:hover {
     background-color: hsl(120, 100%, 35%);
-    transform: scale(1.1);
 }
 
 .form__task:active {
     background-color: hsl(120, 100%, 45%);
-    transform: scale(1.1);
 }
 
 .form__remove {
@@ -78,10 +74,8 @@
 
 .form__remove:hover {
     background-color: hsl(0, 100%, 55%);
-    transform: scale(1.1);
 }
 
 .form__remove:active {
     background-color: hsl(0, 100%, 60%);
-    transform: scale(1.1);
 }
