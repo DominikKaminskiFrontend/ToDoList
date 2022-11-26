@@ -12,4 +12,5 @@ html {
     max-width: 900px;
     background-color: whitesmoke;
     margin: 0 auto;
-  }
+    word-break: break-word;
+}
