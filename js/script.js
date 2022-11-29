@@ -1,20 +1,20 @@
 {
-    const tasks = [];
+    const tasks = [];//imutability do zrobienia
 
     const addNewTask = (newTaskContent) => {
-        tasks.push(
+        tasks.push(//imutability do zrobienia
             {
                 content: newTaskContent,
             });
     }
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        tasks.splice(taskIndex, 1); //imutability do zrobienia
         render();
     }
 
     const toogleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks[taskIndex].done = !tasks[taskIndex].done; //imutability do zrobienia
         render();
     }
 
