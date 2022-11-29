@@ -55,10 +55,12 @@
     color: white;
     border: none;
     background-color: green;
+    transition: 0.5s;
 }
 
 .form__task:hover {
     background-color: hsl(120, 100%, 35%);
+    transform: scale(1.1);
 }
 
 .form__task:active {
@@ -74,6 +76,7 @@
 
 .form__remove:hover {
     background-color: hsl(0, 100%, 55%);
+    transform: scale(1.1);
 }
 
 .form__remove:active {
