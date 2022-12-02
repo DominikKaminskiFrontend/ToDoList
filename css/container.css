@@ -36,3 +36,7 @@
 .container__taskOption:disabled {
     color: #ccc;
 }
+.section__title{
+    padding-left: 10px;
+    font-size: 24px;;
+}
