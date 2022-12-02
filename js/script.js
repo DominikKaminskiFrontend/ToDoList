@@ -38,14 +38,14 @@
     const renderTasks = () => {
         const taskToHtml = task =>` 
         <li class="
-            form__li${task.done && hideDoneTasks ? " hideTask" : "" }">
-                <button class="form__task">
+            form__li${task.done && hideDoneTasks ? " task__buttonStyle--hide" : "" }">
+                <button class="task__buttonStyle">
                     ${task.done ? "✔" : ""}
                 </button>
-                <span class =${task.done ? "form__task--done " : ""}> 
+                <span class =${task.done ? "task__buttonStyle--done " : ""}> 
                     ${task.content} 
                 </span>
-                <button class="form__remove">
+                <button class="task__buttonRemoveStyle">
                     🗑️
                 </button>
         </li>`;
@@ -76,10 +76,10 @@
         }
 
         buttonsElement.innerHTML = `
-        <button class=" container__taskOption js-hideDoneTasksButton">
+        <button class=" task__option js-hideDoneTasksButton">
             ${hideDoneTasks ? "Pokaż" : "Ukryj"} zakończone
         </button>
-        <button class="container__taskOption js-markAllDoneButton"
+        <button class="task__option js-markAllDoneButton"
         ${tasks.every(({ done }) => done) ? " disabled" : ""}>
             Ukończ wszystkie
         </button>`;
@@ -87,7 +87,7 @@
 
 
     const bindRemoveEvents = () => {
-        const removeButtons = document.querySelectorAll(".form__remove");
+        const removeButtons = document.querySelectorAll(".task__buttonRemoveStyle");
 
         removeButtons.forEach((removeButtons, index) => {
             removeButtons.addEventListener("click", () => {
@@ -98,7 +98,7 @@
 
     const bindToggleDoneEvents = () => {
 
-        const toogleDoneButtons = document.querySelectorAll(".form__task");
+        const toogleDoneButtons = document.querySelectorAll(".task__buttonStyle");
 
         toogleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
