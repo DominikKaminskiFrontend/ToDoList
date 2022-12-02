@@ -1,7 +1,7 @@
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 @media screen and (max-width: 449px) {
@@ -13,28 +13,6 @@
 .form__input {
     padding: 10px;
     border: 2px solid rgb(245, 234, 234);
-}
-
-.form__button {
-    padding: 12px;
-    border: none;
-    background-color: hsl(180, 100%, 25%);
-    color: whitesmoke;
-    font-size: 15px;
-    transition: 0.5s;
-}
-
-.form__button:hover {
-    background-color: hsl(180, 97%, 35%);
-    transform: scale(1.1);
-}
-
-.form__button:active {
-    background-color: hsl(180, 97%, 40%);
-}
-
-.hideTask {
-    display: none;
 }
 
 .form__li {
@@ -50,42 +28,5 @@
     border-bottom: 5px solid whitesmoke;
 }
 
-.form__task--done {
-    text-decoration: line-through;
-    margin: 0;
-}
 
-.form__task {
-    width: 30px;
-    height: 30px;
-    color: white;
-    border: none;
-    background-color: green;
-    transition: 0.5s;
-}
 
-.form__task:hover {
-    background-color: hsl(120, 100%, 35%);
-    transform: scale(1.1);
-}
-
-.form__task:active {
-    background-color: hsl(120, 100%, 45%);
-}
-
-.form__remove {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: hsl(0, 100%, 50%);
-    transition: 0.5s;
-}
-
-.form__remove:hover {
-    background-color: hsl(0, 100%, 55%);
-    transform: scale(1.1);
-}
-
-.form__remove:active {
-    background-color: hsl(0, 100%, 60%);
-}

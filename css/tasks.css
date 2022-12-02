@@ -1,0 +1,60 @@
+.task__buttonStyle {
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: green;
+    transition: 0.5s;
+}
+
+.task__buttonStyle--hide {
+    display: none;
+}
+
+.task__buttonStyle--done {
+    text-decoration: line-through;
+    margin: 0;
+}
+
+
+.task__buttonStyle:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.task__buttonStyle:active {
+    background-color: hsl(120, 100%, 45%);
+}
+
+.task__buttonRemoveStyle {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: hsl(0, 100%, 45%);
+    transition: 0.5s;
+}
+
+.task__byttonRemoveStyle:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+
+.task__byttonRemoveStyle:active {
+    background-color: hsl(0, 100%, 80%);
+}
+
+.task__option {
+    border: none;
+    padding: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: end;
+    color: rgb(98, 89, 89);
+    background-color: inherit;
+    transition: 0.5s;
+}
+.task__option:hover {
+    color: hsl(0, 5%, 55%);
+}
+
+.task__option:disabled {
+    color: #ccc;
+}
