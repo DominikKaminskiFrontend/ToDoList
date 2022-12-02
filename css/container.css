@@ -32,3 +32,7 @@
 .container__taskOption:hover {
     color: hsl(0, 5%, 55%);
 }
+
+.container__taskOption:disabled {
+    color: #ccc;
+}
