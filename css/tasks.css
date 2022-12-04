@@ -1,44 +1,46 @@
-.task__buttonStyle {
+.task__buttonDone {
     width: 30px;
     height: 30px;
     color: white;
     border: none;
     background-color: green;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.task__buttonStyle--hide {
+.task__button--hide {
     display: none;
 }
 
-.task__buttonStyle--done {
+.task__button--done {
     text-decoration: line-through;
     margin: 0;
 }
 
 
-.task__buttonStyle:hover {
+.task__buttonDone:hover {
     background-color: hsl(120, 100%, 35%);
 }
 
-.task__buttonStyle:active {
+.task__buttonDone:active {
     background-color: hsl(120, 100%, 45%);
 }
 
-.task__buttonRemoveStyle {
+.task__buttonRemove {
     height: 30px;
     border: none;
     background-color: hsl(0, 100%, 45%);
     transition: 0.5s;
     text-align: center;
     flex-basis: 100%;
+    cursor: pointer;
 }
 
-.task__buttonRemoveStyle:hover {
+.task__buttonRemove:hover {
     background-color: hsl(0, 100%, 60%);
 }
 
-.task__buttonRemoveStyle:active {
+.task__buttonRemove:active {
     background-color: hsl(0, 100%, 80%);
 }
 
@@ -51,7 +53,8 @@
     color: rgb(98, 89, 89);
     background-color: inherit;
     transition: 0.5s;
-}
+    cursor: pointer;
+    }
 
 .task__option:hover {
     color: hsl(0, 5%, 55%);
