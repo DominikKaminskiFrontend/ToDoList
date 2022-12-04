@@ -26,7 +26,8 @@
   -  _grid_ 
   3. **_js_**:
   -  _simple arrow functions_  
-  -  _object array_  
+  -  _object array_   
+  -  _immutablity_  
   
   During learning it will become more advenced.     
   ***
