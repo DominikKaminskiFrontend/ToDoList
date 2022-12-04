@@ -26,18 +26,19 @@
 }
 
 .task__buttonRemoveStyle {
-    width: 30px;
     height: 30px;
     border: none;
     background-color: hsl(0, 100%, 45%);
     transition: 0.5s;
+    text-align: center;
+    flex-basis: 100%;
 }
 
-.task__byttonRemoveStyle:hover {
+.task__buttonRemoveStyle:hover {
     background-color: hsl(0, 100%, 60%);
 }
 
-.task__byttonRemoveStyle:active {
+.task__buttonRemoveStyle:active {
     background-color: hsl(0, 100%, 80%);
 }
 
@@ -51,6 +52,7 @@
     background-color: inherit;
     transition: 0.5s;
 }
+
 .task__option:hover {
     color: hsl(0, 5%, 55%);
 }
