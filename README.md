@@ -3,6 +3,7 @@
   - [Preview](#preview)
   - [Project Idea](#project-idea)
   - [Version 1:](#version-1)
+  - [Version 2:](#version-2)
 # Simple To Do List
   Simple To Do List for educational purposes.  
   ***
@@ -20,7 +21,9 @@
   -  _grid_ - for better resposiving and better elements' positioning  
   -  _@media query_   
   -  _settings for pseudoclasses such as hover_    
-  -  _box-sizing_    
+  -  _box-sizing_   
+  -  _flexbox_
+  -  _grid_ 
   3. **_js_**:
   -  _simple arrow functions_  
   -  _object array_  
@@ -46,4 +49,10 @@ If You want to remove task from list, simply hit red button on the right side wi
  - click red squere to remove task  
 - long task information are allowed   
 ***
-
+## Version 2:   
+ - Added flexbox and grid  
+ - added 2 buttons: finish all & Hide/Show Finished Task  
+ - Added immutablity    
+ - Added transform and transition to buttons  
+ - Better Responsivity      
+***
