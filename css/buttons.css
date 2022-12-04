@@ -15,3 +15,23 @@
 .form__button:active {
     background-color: hsl(180, 97%, 40%);
 }
+
+.section__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 449px) {
+    .section__buttons {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .js-buttons {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}
+
