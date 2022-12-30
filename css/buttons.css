@@ -30,7 +30,7 @@
         flex-direction: column;
         flex-basis: 100%;
     }
-    .js-buttons {
+    .buttons {
         display: flex;
         flex-direction: column;
         flex-basis: 100%;

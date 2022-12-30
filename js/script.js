@@ -64,7 +64,7 @@
     };
 
     const renderButtons = () => {
-        const buttonsElement = document.querySelector(".js-buttons");
+        const buttonsElement = document.querySelector(".buttons");
 
         if (!tasks.length) {
             buttonsElement.innerHTML = "";
